@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Paurush Singh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito Sans', sans-serif;
+      background: linear-gradient(to right, #f2f2f2, #e8f0f0);
+      color: #222;
+    }
+
+    header {
+      background-color: #2f4f4f;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      animation: slideDown 1s ease-out;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 1.2s ease;
+    }
+
+    .container h2 {
+      font-size: 24px;
+      color: #008080;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #008080;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      font-size: 18px;
+      padding: 10px 0;
+      color: #444;
+      position: relative;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+    }
+
+    li::before {
+      content: "✔";
+      position: absolute;
+      left: -25px;
+      color: #008080;
+    }
+
+    li:nth-child(1) { animation-delay: 0.2s; }
+    li:nth-child(2) { animation-delay: 0.4s; }
+    li:nth-child(3) { animation-delay: 0.6s; }
+    li:nth-child(4) { animation-delay: 0.8s; }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #008080;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .back-link:hover {
+      background: #005f5f;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Skills</header>
+
+  <div class="container">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Programming Languages: Python, C/C++, Java</li>
+      <li>Web Development: HTML, CSS, JavaScript</li>
+      <li>Tools & Frameworks: Git, React</li>
+      <li>Databases:MySQL</li>
+      <li>Operating Systems: Linux, Windows</li>
+    </ul>
+    <h2>Soft Skills</h2>
+    <li>Leadership, leading by example, I captained my home city team in cricket</li>
+    <li>Problem-solving, I have solved complex algorithmic problems in competitive programming</li>
+    <li>Calm under pressure</li>
+    <li>Adaptability, I have quickly learned new skills and technologies</li>
+    <li>Open communication, I always strive to understand and empathize with others</li>
+    <li>Self-motivation, I believe in the power of persistence and hard work</li>
+    <li>Resilience, I have faced numerous challenges and overcome them</li>
+    <a href="index.html" class="back-link">Back to Home</a>
+  </div>
+</body>
+</html>

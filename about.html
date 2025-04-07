@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Paurush Singh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+            color: #222;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            background: #444;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #fff;
+            border-left: 8px solid #008080;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container h2 {
+            color: #008080;
+            font-size: 22px;
+            border-bottom: 2px solid #008080;
+            padding-bottom: 10px;
+        }
+
+        .container p {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 18px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            background: #008080;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .back-link:hover {
+            background: #005f5f;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <div class="container">
+        <h2>About Paurush Singh</h2>
+        <p>I'm a keen programming enthusiast with major interests in <b>competitive programming and problem solving.</b>
+             I spend most of my time solving questions and figuring out the least time complexity of a problem. I also am a huge chess enthusiast. I like reading books and playing sports. I was a national U-16 player in cricket. Aside from competitive programming I also have knowledge on <b>web exploitation and XSS.</b></p>
+        <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+</body>
+</html>
